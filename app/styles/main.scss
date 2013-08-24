@@ -1,0 +1,45 @@
+$iconSpritePath: "../images/glyphicons-halflings.png";
+$iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
+
+@import 'sass-bootstrap/lib/bootstrap';
+
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+#mapGoogle {
+    width: 750px;
+    height: 600px;
+}
+
+.mapArea {
+    width: 750px;
+    height: 600px;
+    border: solid 1px #ccc;
+
+    overflow: hidden;
+    position: absolute;
+
+    img {
+        $scale: 0.78;
+        height: (4160px * $scale);
+        width: (3400px * $scale);
+        top: -690px;
+        left: -1569px;
+    }
+
+    .baseMap {
+        position: absolute;
+        opacity: .1;
+    }
+
+    .detailMap {
+        position: absolute;
+        opacity: .6; 
+    }
+
+}
