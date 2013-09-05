@@ -166,9 +166,12 @@ module.exports = function (grunt) {
         },
         // not used since Uglify task does concat,
         // but still available if needed
-        /*concat: {
-            dist: {}
-        },*/
+        //concat: {
+        //    dist: {
+        //        src: ['tmp/scripts/main.js'],
+        //        dest: 'app/scripts/main.js'
+        //    }
+        //},
         // not enabled since usemin task does concat and uglify
         // check index.html to edit your build targets
         // enable this task if you prefer defining your build targets here
